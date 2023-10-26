@@ -6,4 +6,4 @@ jobs:
     name: output details
     steps:
       - name: Output Github context
-        run: echo "${{ toJSON(github) }}" # Output github data. 
+        run: echo "${{ toJSON(github.event) }}" # Output github data. 
